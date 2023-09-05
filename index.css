@@ -23,7 +23,7 @@ html{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    background:#393E46;
+    background:#5AC3B0;
     padding: 15px 0;
 }
 .navbar .max-width{
@@ -78,14 +78,13 @@ section{
 .about, .skills, .skills-content,
 .projects, .projects-content, .contact .contact-content, footer{
     font-family: 'Poppins', sans-serif;
-    
 }
 .about .about-content, .skills .skills-content, 
 .projects .projects-content, .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
+    justify-content: space-between;
 }
 
 section .title{
@@ -173,7 +172,7 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 6px;
 }
 .about .about-content .right .text{
     font-size: 20px;
@@ -209,18 +208,33 @@ section .title::after{
 
 
 
-/* .contact .contact-content  */
+/* responsive media query */
 
-
-
-@media (max-width:850px) {
+@media (max-width: 1004px) {
+    .home .max-width{
+        margin-left:0px;
+}
+}
+@media (max-width: 891px){
     .max-width{
         padding: 0 50px;
     }
-    .menu-btn{
-        display: block;
-        z-index: 999;
+    .max-width{
+        max-width: 800px;
     }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+
+
+}
+
+
 /* -------------------------responsive nav bar code start------------------------------------------------ */
     .navbar .menu{
         position: fixed;
@@ -255,58 +269,58 @@ section .title::after{
         font-size: 20px;
     
     }
-}
-.footer{
-    background:#000;
-    padding:30px 0px;
-    font-family: 'Play', sans-serif;
-    text-align:center;
-    
-    }
-    
-    .footer .row{
-    width:100%;
-    margin:1% 0%;
-    padding:0.6% 0%;
-    color:gray;
-    font-size:0.8em;
-    }
-    
-    .footer .row a{
-    text-decoration:none;
-    color:gray;
-    transition:0.5s;
-    }
-    
-    .footer .row a:hover{
-    color:#fff;
-    }
-    
-    .footer .row ul{
-    width:100%;
-    }
-    
-    .footer .row ul li{
-    display:inline-block;
-    margin:0px 30px;
-    }
-    
-    .footer .row a i{
-    font-size:2em;
-    margin:0% 1%;
-    }
-    
-    @media (max-width:720px){
+
+
     .footer{
-    text-align:left;
-    padding:5%;
-    }
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
-    .footer .row a i{
-    margin:0% 3%;
-    }
-    }
+        background:#000;
+        padding:30px 0px;
+        font-family: 'Play', sans-serif;
+        text-align:center;
+        }
+        
+        .footer .row{
+        width:100%;
+        margin:1% 0%;
+        padding:0.6% 0%;
+        color:gray;
+        font-size:0.8em;
+        }
+        
+        .footer .row a{
+        text-decoration:none;
+        color:gray;
+        transition:0.5s;
+        }
+        
+        .footer .row a:hover{
+        color:#fff;
+        }
+        
+        .footer .row ul{
+        width:100%;
+        }
+        
+        .footer .row ul li{
+        display:inline-block;
+        margin:0px 30px;
+        }
+        
+        .footer .row a i{
+        font-size:2em;
+        margin:0% 1%;
+        }
+        
+        @media (max-width:720px){
+        .footer{
+        text-align:left;
+        padding:5%;
+        }
+        .footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+        }
+        .footer .row a i{
+        margin:0% 3%;
+        }
+        }
