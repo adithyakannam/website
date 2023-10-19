@@ -23,7 +23,7 @@ html{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    background:#5AC3B0;
+    background:#3e5c76;
     padding: 15px 0;
 }
 .navbar .max-width{
@@ -46,7 +46,7 @@ html{
 }
 .navbar .menu li a{
     display: block;
-    color:white;
+    color:black;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -76,7 +76,7 @@ section{
     padding: 100px 0;
 }
 .about, .skills, .skills-content,
-.projects, .projects-content, .contact .contact-content, footer{
+.projects, .projects-content, .contact .contact-content, footer, #certificates{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, .skills .skills-content, 
@@ -205,8 +205,73 @@ section .title::after{
 
 }
 
+/*  Certification  */
+#certificates{
+    height: 100vh;
+}
+.grid-container{
+    display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+#box{
+    text-decoration: none;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#box img{
+    width: 95%;
+    height: 95%;
+    
+}
+#box a:active{
+    color:black;
+}
+#box a:visited{
+    color:grey;
+}
 
 
+/*  Links  */
+.contain .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:rgb(0, 0, 0);
+    font-size:0.8em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+    
+    .contain .row a{
+    text-decoration:none;
+    color:crimson;
+    transition:0.5s;
+    }
+    
+    .contain .row a:hover{
+    color: #000;
+    }
+    
+    .contain .row ul{
+    width:100%;
+    }
+    
+    .contain .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .contain .row a i{
+    font-size:3em;
+    margin:0% 1%;
+    }
 
 /* responsive media query */
 
